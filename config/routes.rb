@@ -1,5 +1,8 @@
 Bliki::Application.routes.draw do
-  root to: "welcome#index"
+  root to: "post#index"
+
+  get 'category/list' => 'category#index'
+  resources :category
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

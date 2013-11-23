@@ -1,9 +1,12 @@
 Bliki::Application.routes.draw do
   root to: "post#index"
 
-  get 'login' => 'users#new'
+  get 'login' => 'sessions#new', :as => "login"
+  get 'logout' => 'sessions#destroy'
   get 'signup' => 'users#new'
+
   resources :users
+  resources :sessions
   #get 'category/list' => 'category#index'
   resources :category
 

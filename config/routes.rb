@@ -1,7 +1,10 @@
 Bliki::Application.routes.draw do
   root to: "post#index"
 
-  get 'category/list' => 'category#index'
+  get 'login' => 'users#new'
+  get 'signup' => 'users#new'
+  resources :users
+  #get 'category/list' => 'category#index'
   resources :category
 
   # The priority is based upon order of creation: first created -> highest priority.

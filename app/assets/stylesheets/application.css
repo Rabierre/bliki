@@ -41,20 +41,29 @@ body {
     padding-top: 30px;
     display: block;
 }
-
 #header > header hgroup a {
     margin-left:    -20px;
     font-size: 2em;
 }
 #header > header ul {
-    margin: 0px;
+    margin: 10px;
     display: block;
-    text-align: right;
+    padding: 0px;
 }
 #header > header ul li {
-    padding-right: 50px;
-    display: block-inline;
+    list-style: none outside none;
+    list-style-position: outside;
+    display: inline;
 }
+
+#right_nav {
+    right: 20px;
+    top: 0px;
+    margin: 0px;
+    position: absolute;
+    text-align: center;
+}
+
 #breadcrumb {
     #border-bottom: 1px solid rgb(100, 100, 100);
 }
@@ -82,4 +91,10 @@ body {
 a {
     text-decoration: none;
     color: rgb(156, 162, 168);
+}
+
+ol, ul {
+    list-style: none outside none;
+    list-style-position: outside;
+    display:inline;
 }

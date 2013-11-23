@@ -98,3 +98,52 @@ ol, ul {
     list-style-position: outside;
     display:inline;
 }
+
+.layerbox {
+    margin: 0px auto;
+    position: relative;
+    width: 400px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.layerbox div.header {
+    padding: 10px;
+}
+.layerbox div.body {
+    padding: 10px 0px;
+}
+.layerbox div.body .field dl {
+    padding: 0px 30px;
+}
+.layerbox div.body .field dl dt {
+    font-size: 15px;
+    margin: 15px 0px 5px;
+}
+.layerbox div.body .filed dl dd {
+    margin: 0px;
+}
+.layserbox div.body .actions {
+    margin: 0px;
+    padding: 0px;
+    border: 0px none;
+    outline: 0px none;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-align: center;
+}
+#entry {
+    padding-top: 100px;
+}
+
+.field input {
+    width: 280px;
+    #margin-right: auto;
+    padding: 5px;
+    font-size: 1.2em;
+    
+    height: 30px;
+    line-height: 30px;
+}
+
+dl {
+    margin: 0px;
+}

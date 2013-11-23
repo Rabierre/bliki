@@ -121,9 +121,9 @@ ol, ul {
 .layerbox div.body .filed dl dd {
     margin: 0px;
 }
-.layserbox div.body .actions {
+.layerbox div.body .actions {
     margin: 0px;
-    padding: 0px;
+    padding: 10px 0px;
     border: 0px none;
     outline: 0px none;
     font-size: 100%;

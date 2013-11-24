@@ -8,6 +8,7 @@ Bliki::Application.routes.draw do
   resources :users
   resources :sessions
   #get 'category/list' => 'category#index'
+  resources :posts
   resources :category
 
   # The priority is based upon order of creation: first created -> highest priority.

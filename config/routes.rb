@@ -1,5 +1,5 @@
 Bliki::Application.routes.draw do
-  root to: "post#index"
+  root to: "posts#index"
 
   get 'login' => 'sessions#new', :as => "login"
   get 'logout' => 'sessions#destroy'

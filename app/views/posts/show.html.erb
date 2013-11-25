@@ -11,8 +11,10 @@
         <%= @post.body %>
     </p>
 
-    <%= link_to 'Back', posts_path %> 
-    <%= link_to 'Edit', edit_post_path%>
+    <%= link_to 'Back', posts_path %>
+    <% if current_user %>
+        <%= link_to 'Edit', edit_post_path%>
+    <% end %>
     
 </div>
 </div>

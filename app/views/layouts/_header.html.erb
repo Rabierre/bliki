@@ -3,8 +3,12 @@
     <header>
         <nav id="right_nav">
             <ul>
-                <li><%= link_to "LOGIN", login_path%></li>
-                <li><%= link_to "SIGNUP", signup_path%></li>
+                <% if current_user %>
+                    <li><%= link_to "LOGOUT", logout_path%></li>
+                <% else %>
+                    <li><%= link_to "LOGIN", login_path%></li>
+                    <li><%= link_to "SIGNUP", signup_path%></li>
+                <% end %>
             </ul>
         </nav>
         <hgroup>

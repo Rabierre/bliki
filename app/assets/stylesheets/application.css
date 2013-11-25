@@ -17,6 +17,10 @@ body {
     padding: 0px;
 }
 
+#entry {
+    padding-top: 100px;
+}
+
 #page {
     position:relative;
     margin:0 auto;
@@ -24,6 +28,7 @@ body {
     width: 990px;
 }
 
+/* header css */
 #header {
     line-height: 1;
 }
@@ -42,8 +47,9 @@ body {
     display: block;
 }
 #header > header hgroup a {
-    margin-left:    -20px;
+    margin-left: -20px;
     font-size: 2em;
+    color: rgb(156, 162, 168);
 }
 #header > header ul {
     margin: 10px;
@@ -51,6 +57,7 @@ body {
     padding: 0px;
 }
 #header > header ul li {
+    margin-right: 7px;
     list-style: none outside none;
     list-style-position: outside;
     display: inline;
@@ -80,7 +87,7 @@ body {
 
 #content {
     float: left;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(255, 255, 255);
     width: 778px;
     min-height: 700px;
     display:   block;
@@ -90,7 +97,6 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(156, 162, 168);
 }
 
 ol, ul {
@@ -99,6 +105,36 @@ ol, ul {
     display:inline;
 }
 
+dl {
+    margin: 0px;
+}
+
+article {
+    margin: 0px 0px 40px;
+    display: block;
+    text-align: left;
+}
+
+/* post css */
+.post-title {
+    text-transform: uppercase;
+    #margin: 10px 10px 0px;
+    padding: 30px 30px 10px;
+    background: none repeat scroll 0% 0% rgb(238, 238, 238);
+}
+.post-title a {
+    color: rgb(89, 55, 71);
+    font-size: 20px;
+    font-weight: inherit;
+}
+
+.post-body {
+    margin: 0px 0px 10px;
+    padding: 10px 35px 10px;
+    background: none repeat scroll 0% 0% rgb(247, 247, 247);
+}
+
+/* login & signup box TODO move */
 .layerbox {
     margin: 0px auto;
     position: relative;
@@ -130,9 +166,6 @@ ol, ul {
     vertical-align: baseline;
     text-align: center;
 }
-#entry {
-    padding-top: 100px;
-}
 
 .field input {
     width: 280px;
@@ -142,8 +175,4 @@ ol, ul {
     
     height: 30px;
     line-height: 30px;
-}
-
-dl {
-    margin: 0px;
 }

@@ -4,10 +4,11 @@
         <nav id="right_nav">
             <ul>
                 <% if current_user %>
-                    <li><%= link_to "LOGOUT", logout_path%></li>
+                    <li><%= link_to 'NewPost', new_post_path %></li>
+                    <li><%= link_to "LogOut", logout_path%></li>
                 <% else %>
-                    <li><%= link_to "LOGIN", login_path%></li>
-                    <li><%= link_to "SIGNUP", signup_path%></li>
+                    <li><%= link_to "LogIn", login_path%></li>
+                    <li><%= link_to "SignUp", signup_path%></li>
                 <% end %>
             </ul>
         </nav>

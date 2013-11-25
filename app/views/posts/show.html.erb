@@ -1,0 +1,17 @@
+<div id="page">
+<%= render "layouts/menu" %>
+
+<div id="content">
+    <p>
+        <h2> Title:
+        <%= @post.title %>
+        </h2>
+    </p>
+    <p>
+        <%= @post.body %>
+    </p>
+
+    <%= link_to 'Back', posts_path %> |
+    
+</div>
+</div>

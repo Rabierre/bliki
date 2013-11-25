@@ -1,10 +1,12 @@
 <div id="page">
     <div id="content">
         <h2>Contents Goes Here!</h2>
-        <% @posts.each do |post| %>
-            <% post.title %>
-        <% end %>
         <%= link_to 'new post', new_post_path %>
+        <% @posts.each do |post| %>
+            <ul>
+            <li><%= link_to post.title, post_path(post) %></li>
+            </ul>
+        <% end %>
     </div>
     <%= render "layouts/menu" %>
 </div>

@@ -20,6 +20,7 @@ body {
 
 #entry {
     padding-top: 100px;
+    display: block;
 }
 
 /* header css */
@@ -91,7 +92,7 @@ body {
     background-color: rgb(255, 255, 255);
     width: 778px;
     min-height: 700px;
-    display:   block;
+    display: block;
     text-align:center;
     margin: 0px;  
 }
@@ -124,31 +125,6 @@ li {
 
 dl {
     margin: 0px;
-}
-
-article {
-    margin: 0px 0px 40px;
-    display: block;
-    text-align: left;
-}
-
-/* post css */
-.post-title {
-    text-transform: uppercase;
-    #margin: 10px 10px 0px;
-    padding: 30px 30px 10px;
-    background: none repeat scroll 0% 0% rgb(238, 238, 238);
-}
-.post-title a {
-    color: rgb(89, 55, 71);
-    font-size: 20px;
-    font-weight: inherit;
-}
-
-.post-body {
-    margin: 0px 0px 10px;
-    padding: 10px 35px 10px;
-    background: none repeat scroll 0% 0% rgb(247, 247, 247);
 }
 
 /* login & signup box TODO move */

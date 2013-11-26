@@ -1,0 +1,19 @@
+<div id="content">
+    <div id="post-revision">
+        <% @post.revision.reverse.each do |r| %>
+            <article>
+                <div class="post-meta"></div>
+                <div class="post-title">
+                    <p class="title"><%= @post.title %></p>
+                    <p class="title-meta">update time  <%= @post.updated_at %></p>
+                </div>
+                <div class="post-body">
+                    <ul>
+                        <li><%= r.body %></li>
+                    </ul>
+                </div>
+            </article>
+        <% end %>
+    </div>
+</div>
+<%= render "layouts/menu" %>

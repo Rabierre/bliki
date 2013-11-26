@@ -1,0 +1,61 @@
+
+/* post css */
+
+article {
+    margin: 0px 0px 40px;
+    display: block;
+    text-align: left;
+}
+
+.post-title {
+    text-transform: uppercase;
+    #margin: 10px 10px 0px;
+    padding: 30px 30px 10px;
+    background: none repeat scroll 0% 0% rgb(238, 238, 238);
+}
+
+.post-title a {
+    color: rgb(89, 55, 71);
+    font-size: 20px;
+    font-weight: inherit;
+}
+
+.post-body {
+    margin: 0px 0px 10px;
+    padding: 10px 35px 10px;
+    background: none repeat scroll 0% 0% rgb(247, 247, 247);
+}
+
+#post-new-head {
+    font-size: 20px;
+    padding: 20px 30px 10px;
+    background: none repeat scroll 0% 0% rgb(238, 238, 238);
+}
+
+#post-new-body {
+    margin-top: 30px;
+}
+
+.post-title-form {
+    text-align: left;
+}
+
+.post-title-form input {
+    width: 100%;
+    height: 1.5em;
+    font-size: 20px;
+    #margin: 1px 0px;
+    #padding: 1px 1px 1px;
+}
+
+.post-body-form {
+    margin: 15px 0px 0px;
+    text-align: left;
+}
+
+.post-body-form textarea {
+    width: 100%;
+    height: 450px;
+    margin: 1px 0px;
+    padding: 1px 1px 1px;
+}

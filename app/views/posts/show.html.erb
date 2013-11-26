@@ -4,8 +4,9 @@
         <div class="post-title"><%= @post.title %></div>
         <div class="post-body">
             <p><%= @post.body %></p>
+            <%= link_to 'history', post_revisions_path(@post.id) %>
             <%= link_to 'back', posts_path %>
-        
+    
             <% if current_user %>
                 <%= link_to 'edit', edit_post_path%>
                 <%= link_to 'delete', post_path, method: :delete, data: {confirm: 'Really Remove this post?'} %>
@@ -13,3 +14,4 @@
         </div>
     </article>
 </div>
+<%= render "layouts/menu" %>

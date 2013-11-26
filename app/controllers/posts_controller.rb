@@ -9,6 +9,8 @@ class PostsController < ApplicationController
 
     def create
         @post = Post.new(params[:post].permit(:title, :body))
+        @revision = @post.revision.new(params[:post].permit(:body))
+
         if @post.save
             redirect_to @post
         else
@@ -26,6 +28,7 @@ class PostsController < ApplicationController
 
     def update
         @post = Post.find(params[:id])
+        @revision = @post.revision.new(params[:post].permit(:body))
 
         if @post.update(params[:post].permit(:title, :body))
             redirect_to @post

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131123055306) do
+ActiveRecord::Schema.define(version: 20131126100208) do
 
   create_table "categories", force: true do |t|
     t.string   "title"
@@ -25,6 +25,15 @@ ActiveRecord::Schema.define(version: 20131123055306) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "revisions", force: true do |t|
+    t.text     "body"
+    t.integer  "post_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "revisions", ["post_id"], name: "index_revisions_on_post_id"
 
   create_table "users", force: true do |t|
     t.string   "email"

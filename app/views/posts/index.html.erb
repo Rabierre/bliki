@@ -1,22 +1,19 @@
-<div id="page">
-    <div id="content">
-        <ul>
-            <% @posts.each do |post| %>
-                <li>
-                <article>
-                    <div class="post-meta"></div>
-                    <div class="post-title"><%= link_to post.title, post_path(post) %></div>
-                    <div class="post-body">
-                        <p><%= post.body %></p>
-                        <% if current_user %>
-                            <%= link_to 'edit', edit_post_path(post) %>
-                            <%= link_to 'delete', post_path(post), method: :delete, data: {confirm: 'Really Remove this post?'} %>
-                        <% end %>
-                    </div>
-                </article>
-                </li>
-            <% end %>
-        </ul>
-    </div>
-    <%= render "layouts/menu" %>
+<div id="content">
+    <ul>
+        <% @posts.each do |post| %>
+            <li>
+            <article>
+                <div class="post-meta"></div>
+                <div class="post-title"><%= link_to post.title, post_path(post) %></div>
+                <div class="post-body">
+                    <p><%= post.body %></p>
+                    <% if current_user %>
+                        <%= link_to 'edit', edit_post_path(post) %>
+                        <%= link_to 'delete', post_path(post), method: :delete, data: {confirm: 'Really Remove this post?'} %>
+                    <% end %>
+                </div>
+            </article>
+            </li>
+        <% end %>
+    </ul>
 </div>

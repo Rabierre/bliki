@@ -1,21 +1,18 @@
 <div id="page">
-<%= render "layouts/menu" %>
-
-<div id="content">
-    <p>
-        <h2> Title:
-        <%= @post.title %>
-        </h2>
-    </p>
-    <p>
-        <%= @post.body %>
-    </p>
-
-    <%= link_to 'Back', posts_path %>
-    <% if current_user %>
-        <%= link_to 'Edit', edit_post_path%>
-        <%= link_to 'Delete', post_path, method: :delete, data: {confirm: 'Really Remove this post?'} %>
-    <% end %>
-    
-</div>
+    <div id="content">
+        <article>
+            <div class="post-meta"></div>
+            <div class="post-title"><%= @post.title %></div>
+            <div class="post-body">
+                <p><%= @post.body %></p>
+                <%= link_to 'back', posts_path %>
+            
+                <% if current_user %>
+                    <%= link_to 'edit', edit_post_path%>
+                    <%= link_to 'delete', post_path, method: :delete, data: {confirm: 'Really Remove this post?'} %>
+                <% end %>
+            </div>
+        </article>
+    </div>
+    <%= render "layouts/menu" %>
 </div>

@@ -1,36 +1,36 @@
 <div id="content">
-    <div id="post-new-head">New Post</div>
+  <div id="post-new-head">New Post</div>
 
-    <div id="post-new-body">
-      <%= form_for @post do |f| %>
-          <% if @post.errors.any? %>
-              <div id="errorExplanation">
-              <h2><%= pluralize(@post.errors.count, "error") %> 
-                  prohibited this post from being saved:
-              </h2>
-              <ul>
-                  <% @post.errors.full_messages.each do |msg| %>
-                      <li><%= msg %></li>
-                  <% end %>
-              </ul>
-              </div>
-          <% end %>
-
-        <div class="post-title-form">
-          <%= f.label :title %>
-          <%= f.text_field :title %>
-        </div>
-
-        <div class="post-body-form">
-          <%= f.label :body %>
-          <%= f.text_area :body %>    
-        </div>
-
-        <p>
-          <%= f.submit %>
-        </p>
+  <div id="post-new-body">
+    <%= form_for @post do |f| %>
+      <% if @post.errors.any? %>
+          <div id="errorExplanation">
+          <h2><%= pluralize(@post.errors.count, "error") %> 
+              prohibited this post from being saved:
+          </h2>
+          <ul>
+              <% @post.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
+              <% end %>
+          </ul>
+          </div>
       <% end %>
-      <%= link_to 'back', posts_path %>
-    </div>
+
+      <div class="post-title-form">
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+      </div>
+
+      <div class="post-body-form">
+        <%= f.label :body %>
+        <%= f.text_area :body %>    
+      </div>
+
+      <p>
+        <%= f.submit %>
+      </p>
+    <% end %>
+    <%= link_to 'back', posts_path %>
+  </div>
 </div>
 <%= render "layouts/menu" %>

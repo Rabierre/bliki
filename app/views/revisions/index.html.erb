@@ -1,15 +1,15 @@
 <div id="content">
     <div id="post-revision">
-        <% @revisions.each do |r| %>
+        <% @revisions.each do |revision| %>
             <article>
                 <div class="post-meta"></div>
                 <div class="post-title">
                     <p class="title"><%= @post.title %></p>
-                    <p class="title-meta">update time  <%= r.created_at %></p>
+                    <p class="title-meta">update time  <%= revision.created_at %></p>
                 </div>
                 <div class="post-body">
                     <ul>
-                        <li><%= r.body %></li>
+                        <li><%= revision.body %></li>
                     </ul>
                 </div>
             </article>

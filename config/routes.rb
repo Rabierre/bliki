@@ -7,7 +7,6 @@ Bliki::Application.routes.draw do
 
   resources :users
   resources :sessions
-  #get 'category/list' => 'category#index'
 
   resources :posts do
     resources :revisions

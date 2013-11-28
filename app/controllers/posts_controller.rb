@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
     def index
+        # TODO paging
         @posts = Post.all.order("created_at desc")
     end
 
@@ -12,7 +13,8 @@ class PostsController < ApplicationController
         @revision = @post.revision.new(params[:post].permit(:body))
 
         if @post.save
-            redirect_to @post
+            redirect_to @post # show new post's detail
+            #redirect_to :root
         else
             render 'new'
         end
@@ -35,5 +37,12 @@ class PostsController < ApplicationController
         else
             render 'edit'
         end
+    end
+
+    def destroy
+        post = Post.find(params[:id])
+        post.delete
+
+        redirect_to :root
     end
 end

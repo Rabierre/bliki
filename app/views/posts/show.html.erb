@@ -3,7 +3,12 @@
         <div class="post-meta"></div>
         <div class="post-title"><%= @post.title %></div>
         <div class="post-body">
-            <p><%= @post.body %></p>
+            <p>
+                <% @post.body.split("\n").each do |phrase| %>
+                    <%= phrase %>
+                    <br/>
+                <% end %>
+            </p>
             <%= link_to 'history', post_revisions_path(@post.id) %>
             <%= link_to 'back', posts_path %>
     

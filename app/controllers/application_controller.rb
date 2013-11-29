@@ -13,5 +13,10 @@ private
     @categories ||= Category.all
   end
 
-  helper_method :current_user, :categories
+  def recents
+    @recents ||= Post.all.order("updated_at desc").first(10)
+  end
+
+
+  helper_method :current_user, :categories, :recents
 end

@@ -1,11 +1,12 @@
 <div id="content">
+    <div id="post-list">
     <article>
         <div class="post-meta"></div>
         <div class="post-title"><%= @post.title %></div>
         <div class="post-body">
             <p>
-                <% @post.body.split("\n").each do |phrase| %>
-                    <%= phrase %>
+                <% @post.body.split("\n").each do |sentence| %>
+                    <%= sentence %>
                     <br/>
                 <% end %>
             </p>
@@ -18,5 +19,6 @@
             <% end %>
         </div>
     </article>
+    </div>
 </div>
 <%= render "layouts/menu" %>

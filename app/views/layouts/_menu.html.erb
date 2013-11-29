@@ -1,14 +1,15 @@
 <div id="menu">
-    <aside>
-        <strong>Menu</strong><br>
+    <aside class="github-badge">
+        <iframe src="http://githubbadge.appspot.com/badge/rabierre?s=1" style="border: 0;height: 130px;width: 220px;overflow: hidden;" frameBorder=0></iframe>
+    </aside>
 
-        <div id="category">
-            <%= render "categories/index" %>
-        </div>
-        <br>
+    <aside class="category">
+        <h1>Category</h1>
+        <%= render "categories/index" %>
+    </aside>
 
-        <div id="github-badge">
-            <iframe src="http://githubbadge.appspot.com/badge/rabierre?s=1" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder=0></iframe>
-        </div>
+    <aside class="recents">
+        <h1>recent changes</h1>
+        <%= render "posts/recent" %>
     </aside>
 </div>

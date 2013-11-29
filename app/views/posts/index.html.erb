@@ -7,8 +7,8 @@
                 <div class="post-title"><%= link_to post.title, post_path(post) %></div>
                 <div class="post-body">
                     <p>
-                        <% post.body.split("\n").each do |phrase| %>
-                            <%= phrase %>
+                        <% post.body.split("\n").each do |sentence| %>
+                            <%= sentence %>
                             <br/>
                         <% end %>
                     </p>

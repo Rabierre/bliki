@@ -89,23 +89,47 @@ body {
 
 #content {
     float: left;
-    background-color: rgb(255, 255, 255);
-    width: 778px;
-    min-height: 700px;
     display: block;
     text-align:center;
-    margin: 0px;  
+    width: 780px;
+    min-height: 700px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
 }
 
 #menu {
-    background-image:   url("menu-background.png");
     height:500px;
     width: 220px;
     float:left;
     margin-left: 20px;
-    padding: 10px 0px 10px;
-    text-align: center;
-    border: 1px solid rgb(123, 123, 123);
+    #padding: 10px 0px 10px;
+    #border: 1px solid rgb(123, 123, 123);
+}
+
+#menu aside {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 25px;
+}
+
+#menu aside iframe {
+    padding-top: 5px;
+    background-image:   url("menu-background.png");
+}
+
+#menu aside h1 {
+    font-size: 20px;
+    padding: 10px 0px 5px;
+    margin: 0px 0px 5px;
+    color: rgb(230, 230, 230);
+    background-image:   url("menu-background.png");
+}
+#menu aside ul {
+    font-size: 12px;
+}
+
+#menu aside a {
+    color: rgb(0, 0, 0);
 }
 
 a {
@@ -125,6 +149,10 @@ li {
 
 dl {
     margin: 0px;
+}
+
+aside {
+    text-align: center;
 }
 
 /* login & signup box TODO move */

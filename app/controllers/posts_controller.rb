@@ -13,8 +13,7 @@ class PostsController < ApplicationController
         @revision = @post.revision.new(params[:post].permit(:body))
 
         if @post.save
-            redirect_to @post # show new post's detail
-            #redirect_to :root
+            redirect_to @post
         else
             render 'new'
         end

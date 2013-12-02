@@ -1,7 +1,7 @@
 <ul>
     <% recents.each do |post| %>
         <li>
-            <%= link_to post.title, post_path(post) %>
+            <%= link_to post.title, post_path(post) %><br/>
             <%= post.updated_at %>
         </li>
     <% end %>

@@ -8,6 +8,8 @@ Bliki::Application.routes.draw do
   resources :users
   resources :sessions
 
+  get 'posts/recents' => 'posts#recents'
+  
   resources :posts do
     resources :revisions
     resources :category

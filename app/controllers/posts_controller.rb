@@ -4,6 +4,14 @@ class PostsController < ApplicationController
         @posts = Post.all.order("created_at desc")
     end
 
+    def show
+        @post = Post.find(params[:id])
+    end
+
+    def recents
+        @recents = Post.all.order("updated_at desc").first(30)
+    end
+
     def new
         @post = Post.new
     end
@@ -17,10 +25,6 @@ class PostsController < ApplicationController
         else
             render 'new'
         end
-    end
-
-    def show
-        @post = Post.find(params[:id])
     end
 
     def edit

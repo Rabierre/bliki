@@ -121,9 +121,13 @@ body {
     font-size: 20px;
     padding: 10px 0px 5px;
     margin: 0px 0px 5px;
-    color: rgb(230, 230, 230);
     background-image:   url("menu-background.png");
 }
+
+#menu aside h1 a {
+    color: rgb(230, 230, 230);
+}
+
 #menu aside ul {
     font-size: 12px;
 }
@@ -132,7 +136,7 @@ body {
     border-bottom: 1px solid rgb(221, 221, 221);
 }
 
-#menu aside a {
+#menu aside ul li a {
     font-size: 1.2em;
     color: rgb(89, 55, 71);
 }

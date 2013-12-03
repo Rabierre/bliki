@@ -1,8 +1,8 @@
 <ul>
     <% recents.each do |post| %>
         <li>
-            <% title = post.title[0,10]
-                title += ".." if post.title.length > 10 %>
+            <% title = post.title[0,14]
+                title += ".." if post.title.length > 14 %>
             <%= link_to title, post_path(post) %><br/>
             <%= post.updated_at %>
         </li>

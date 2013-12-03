@@ -5,11 +5,11 @@
 
     <aside class="category">
         <h1>Category</h1>
-        <%= render "categories/index" %>
+        <%= render "layouts/categories" %>
     </aside>
 
     <aside class="recents">
         <h1><%= link_to "recent changes", posts_recents_path %></h1>
-        <%= render "posts/recent" %>
+        <%= render "layouts/recent_posts" %>
     </aside>
 </div>

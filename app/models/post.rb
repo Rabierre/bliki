@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
-    has_many :category
+    belongs_to :category
     has_many :revision, dependent: :destroy
     validates :title, presence: true, length: {minimum: 1}
 end

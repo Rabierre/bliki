@@ -14,7 +14,7 @@ class CategoriesController < ApplicationController
         if @category.save
             redirect_to '/categories'
         else
-            @categories = Category.all # todo 여기에 놓아도 되나?
+            @categories = Category.all
             render '/categories/index'
         end
     end

@@ -5,6 +5,8 @@ class UsersController < ApplicationController
 
     def create
         @user = User.new(user_params)
+
+        # TODO password safety check
         if @user.save
             redirect_to root_url, :notice => "Welcome!"
         else

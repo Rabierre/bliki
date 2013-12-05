@@ -27,6 +27,7 @@ body {
 #header {
     line-height: 1;
 }
+
 #header{
     background-image:   url("header-background.png");
     margin: 0px 0px 20px;
@@ -36,33 +37,40 @@ body {
     border-bottom-style: solid;
     border-bottom-color: rgb(0, 0, 0);
 }
+
 #header > header hgroup {
     text-align: center; 
     padding-top: 30px;
     display: block;
 }
+
 #header > header hgroup h1 {
     font-size: 2em;
 }
+
 #header > header hgroup h2 {
     font-size: 17px;
     color: rgb(150, 150, 160);
 }
+
 #header > header hgroup a {
     margin-left: -20px;
     color: rgb(156, 162, 168);
 }
+
 #header > header ul {
     margin: 10px;
     display: block;
     padding: 0px;
 }
+
 #header > header ul li {
     margin-right: 7px;
     list-style: none outside none;
     list-style-position: outside;
     display: inline;
 }
+
 #header > header ul li a {
     color: rgb(239, 239, 239);
 }
@@ -76,7 +84,6 @@ body {
 }
 
 #breadcrumb {
-    #border-bottom: 1px solid rgb(100, 100, 100);
 }
 
 #page {
@@ -171,22 +178,28 @@ aside {
     width: 400px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
+
 .layerbox div.header {
     padding: 10px;
 }
+
 .layerbox div.body {
     padding: 10px 0px;
 }
+
 .layerbox div.body .field dl {
     padding: 0px 30px;
 }
+
 .layerbox div.body .field dl dt {
     font-size: 15px;
     margin: 15px 0px 5px;
 }
+
 .layerbox div.body .filed dl dd {
     margin: 0px;
 }
+
 .layerbox div.body .actions {
     margin: 0px;
     padding: 10px 0px;
@@ -201,7 +214,6 @@ aside {
     width: 280px;
     padding: 5px;
     font-size: 1.2em;
-    
     height: 30px;
     line-height: 30px;
 }

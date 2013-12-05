@@ -25,9 +25,11 @@
         <%= f.label :body %>
         <%= f.text_area :body %>    
       </div>
-
+      <div class="">
+        <%= select_tag :category_id, options_for_select(@categories.all.map { |c| [c.name, c.id] }) %> 
+      </div>
       <p>
-        <%= f.submit %>
+        <%= f.submit 'Add New Post'%>
       </p>
     <% end %>
     <%= link_to 'back', posts_path %>

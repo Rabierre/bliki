@@ -9,7 +9,7 @@ class CategoriesController < ApplicationController
     end
 
     def create
-        @category = Category.new(params[:category].permit(:title))
+        @category = Category.new(params[:category].permit(:name, :description))
 
         if @category.save
             redirect_to '/categories'
@@ -17,5 +17,9 @@ class CategoriesController < ApplicationController
             @categories = Category.all
             render '/categories/index'
         end
+    end
+
+    def show
+        @posts = Post.where('category_id ==' + params[:id]) 
     end
 end

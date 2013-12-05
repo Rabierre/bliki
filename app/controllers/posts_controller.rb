@@ -6,6 +6,7 @@ class PostsController < ApplicationController
 
     def show
         @post = Post.find(params[:id])
+        @category = Category.find_by id: @post.category_id
     end
 
     def recents
@@ -14,10 +15,17 @@ class PostsController < ApplicationController
 
     def new
         @post = Post.new
+        @categories = Category.all
     end
 
     def create
         @post = Post.new(params[:post].permit(:title, :body))
+        #@post.category = Category.find_by(id: params[:category_id])
+        @post.category_id = params[:category_id]
+
+        #category = Category.find_by title: params[:category]
+        #category.posts.create(params[:post].permit(:title, :body, :category))
+
         @revision = @post.revision.new(params[:post].permit(:body))
 
         if @post.save

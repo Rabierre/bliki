@@ -2,7 +2,10 @@
     <div id="post-list">
     <article>
         <div class="post-meta"></div>
-        <div class="post-title"><%= @post.title %></div>
+        <div class="post-title">
+            <%= @post.title %>
+            <%= @category.name %>
+        </div>
         <div class="post-body">
             <p>
                 <% @post.body.split("\n").each do |sentence| %>

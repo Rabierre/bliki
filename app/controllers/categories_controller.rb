@@ -21,6 +21,6 @@ class CategoriesController < ApplicationController
 
     def show
         #@posts = Post.where('category_id ==' + params[:id]) 
-        @posts = Post.where(category_id: params[:id])
+        @posts = Post.where(category: params[:id])
     end
 end

@@ -6,7 +6,8 @@ class PostsController < ApplicationController
 
     def show
         @post = Post.find(params[:id])
-        @category = Category.find_by id: @post.category_id
+        @category = Category.find_by name: @post.category
+        #@category = Category.find_by id: @post.category_id
     end
 
     def recents
@@ -21,7 +22,7 @@ class PostsController < ApplicationController
     def create
         @post = Post.new(params[:post].permit(:title, :body))
         #@post.category = Category.find_by(id: params[:category_id])
-        @post.category_id = params[:category_id]
+        @post.category = params[:category_id]
 
         #category = Category.find_by title: params[:category]
         #category.posts.create(params[:post].permit(:title, :body, :category))

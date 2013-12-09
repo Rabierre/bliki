@@ -3,7 +3,7 @@ class CreatePosts < ActiveRecord::Migration
     create_table :posts do |t|
         t.string :title
         t.string :body
-        t.references :category, index: true
+        t.string :category
         t.timestamps
     end
   end

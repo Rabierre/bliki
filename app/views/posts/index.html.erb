@@ -4,7 +4,10 @@
             <li>
             <article>
                 <div class="post-meta"></div>
-                <div class="post-title"><%= link_to post.title, post_path(post) %></div>
+                <div class="post-title">
+                    <%= link_to post.title, post_path(post) %>
+                    <%= post.category %>
+                </div>
                 <div class="post-body">
                     <p>
                         <% post.body.split("\n").each do |sentence| %>

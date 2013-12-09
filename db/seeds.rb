@@ -7,4 +7,4 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Category.create(name: 'Uncategorized', description: 'default category')
-Post.create(title: 'Welcome', body: 'Hello', category_id: 1)
+Post.create(title: 'Welcome', body: 'Hello', category: 'Uncategorized')

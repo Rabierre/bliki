@@ -1,27 +1,26 @@
 <div id="content">
     <div id="post-list">
-    <article>
-        <div class="post-meta"></div>
-        <div class="post-title">
-            <%= @post.title %>
-            <%= @post.category %>
-        </div>
-        <div class="post-body">
-            <p>
-                <% @post.body.split("\n").each do |sentence| %>
-                    <%= sentence %>
-                    <br/>
+        <article>
+            <div class="post-meta"></div>
+            <div class="post-title">
+                <%= @post.title %>
+                <%= @post.category %>
+            </div>
+            <div class="post-body">
+                <p>
+                    <% @post.body.split("\n").each do |sentence| %>
+                        <%= sentence %>
+                        <br/>
+                    <% end %>
+                </p>
+                <%= link_to 'history', post_revisions_path(@post.id) %>
+                <%= link_to 'back', posts_path %>
+
+                <% if current_user %>
+                    <%= link_to 'edit', edit_post_path%>
+                    <%= link_to 'delete', post_path, method: :delete, data: {confirm: 'Really Remove this post?'} %>
                 <% end %>
-            </p>
-            <%= link_to 'history', post_revisions_path(@post.id) %>
-            <%= link_to 'back', posts_path %>
-    
-            <% if current_user %>
-                <%= link_to 'edit', edit_post_path%>
-                <%= link_to 'delete', post_path, method: :delete, data: {confirm: 'Really Remove this post?'} %>
-            <% end %>
-        </div>
-    </article>
+            </div>
+        </article>
     </div>
 </div>
-<%= render "layouts/menu" %>

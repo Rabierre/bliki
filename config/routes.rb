@@ -14,7 +14,7 @@ Bliki::Application.routes.draw do
     resources :revisions
   end
 
-  resources :categories
+  resources :categories, :param => :category
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

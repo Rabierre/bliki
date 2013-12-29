@@ -3,10 +3,12 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
+gem 'nokogiri'
 # database for Active Record
 group :development, :test do
   gem 'sqlite3'
-end 
+  gem 'kumade'
+end
 
 group :production do
   gem 'pg'

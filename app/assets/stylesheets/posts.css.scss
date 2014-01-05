@@ -9,21 +9,23 @@ article {
 
 .post-title {
     text-transform: uppercase;
-    padding: 30px 30px 10px;
+    padding: 25px 30px 10px;
     border-radius: 3px 3px 0px 0px;
     background: none repeat scroll 0% 0% rgb(238, 238, 238);
 }
 
 .post-title a {
-    color: rgb(89, 55, 71);
+    color: rgb(32, 41, 35);
     font-size: 20px;
     font-weight: inherit;
 }
 
 .post-body {
+    min-height: 100px;
     margin: 0px 0px 10px;
     padding: 10px 35px 10px;
-    min-height: 100px;
+    border-radius: 0px 0px 2px 2px;
+    color: rgb(17, 23, 19);
     background: none repeat scroll 0% 0% rgba(247, 247, 247, 0.9);
 }
 

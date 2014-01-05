@@ -19,7 +19,7 @@ body {
     height: 100%;
     display: block;
     font-family: sans-serif;
-    background-image: url("dawn-sea.jpeg");
+    background-image: url("glados.jpg");
     background-size: cover;
 }
 
@@ -35,13 +35,13 @@ body {
 
 #header{
     background-color: rgba(0,0,0,0);
-    margin: 0px 0px 20px;
+    margin: 0px 0px 45px;
     padding: 0px;
     display: block;
 }
 
 #header > header hgroup {
-    text-align: center;
+    margin-left: 25px;
     padding-top: 30px;
     display: block;
 }
@@ -52,12 +52,11 @@ body {
 
 #header > header hgroup h2 {
     font-size: 17px;
-    color: rgb(168, 168, 168);
+    color: rgb(240, 235, 240);
 }
 
 #header > header hgroup a {
-    margin-left: -20px;
-    color: rgb(156, 162, 168);
+    color: rgb(252, 252, 252);
 }
 
 #header > header ul {
@@ -75,17 +74,15 @@ body {
 
 #header > header ul li a {
     color: rgb(239, 239, 239);
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 #right_nav {
-    right: 20px;
+    right: 60px;
     top: 0px;
-    margin: 0px;
+    margin: 10px 0px 0px;
     position: absolute;
     text-align: center;
-}
-
-#breadcrumb {
 }
 
 #page {
@@ -102,7 +99,7 @@ body {
     width: 65%;
     min-height: 700px;
     margin: 0 auto;
-    margin-left: 15%;
+    margin-left: 16%;
     border-radius: 3px 3px 0px 0px;
 
 }

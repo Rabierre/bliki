@@ -1,0 +1,6 @@
+h2 hello
+
+div class="find-posts-wrapper"
+  = form_tag find_posts_path
+    = text_field_tag "title", nil, class: "find-posts-input"
+    = button_tag "FIND", class: "find-posts-button"

@@ -9,13 +9,17 @@ Bliki::Application.routes.draw do
   resources :sessions
 
   get 'posts/recents' => 'posts#recents'
-  
+
   resources :posts do
     resources :revisions
+
+    collection do
+      get 'find'
+    end
   end
 
   resources :categories, :param => :category
-  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -56,7 +60,7 @@ Bliki::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'

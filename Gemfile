@@ -4,17 +4,16 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 gem 'nokogiri'
-# database for Active Record
+
 group :development, :test do
   gem 'sqlite3'
   gem 'kumade'
 end
-
 group :production do
   gem 'pg'
 end
 
-# Use SCSS for stylesheets
+gem 'slim-rails'
 gem 'sass-rails', '~> 4.0.0'
 
 # Use Uglifier as compressor for JavaScript assets

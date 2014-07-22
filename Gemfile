@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 gem 'nokogiri'
-# database for Active Record
+
 group :development, :test do
   gem 'sqlite3'
   gem 'kumade'
@@ -12,6 +12,7 @@ end
 
 group :production do
   gem 'pg'
+  gem 'unicorn'
 end
 
 # Use SCSS for stylesheets

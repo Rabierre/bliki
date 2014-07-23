@@ -2,7 +2,7 @@
     <ul>
         <% @posts.each do |post| %>
             <li>
-            <article>
+            <article class="post">
                 <div class="post-meta"></div>
                 <div class="post-title">
                     <%= link_to post.title, post_path(post) %>
@@ -19,6 +19,9 @@
                         <%= link_to 'edit', edit_post_path(post) %>
                         <%= link_to 'delete', post_path(post), method: :delete, data: {confirm: 'Really Remove this post?'} %>
                     <% end %>
+                </div>
+                <div class="post-footer">
+                    <div class="post-read-more button" >Read More</div>
                 </div>
             </article>
             </li>

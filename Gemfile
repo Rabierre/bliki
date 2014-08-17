@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 gem 'slim'
-
 gem 'nokogiri'
 
 group :development, :test do
@@ -15,6 +14,7 @@ group :production do
   gem 'pg'
   # Use unicorn as the app server
   gem 'unicorn'
+  gem 'rails_12factor'
 end
 
 # Use SCSS for stylesheets
@@ -31,9 +31,6 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'

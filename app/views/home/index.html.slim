@@ -1,0 +1,18 @@
+div id="content"
+  ul
+    - @posts.each do |post|
+      li
+        article class="post"
+          div class="post-title"
+            = link_to post.title, post_path(post)
+            = post.category
+            div class="post-body"
+              p
+                - post.body.split("\n").each do |sentence|
+                  = sentence
+                  br
+              - if current_user
+                = link_to 'edit', edit_post_path(post)
+                = link_to 'delete', post_path(post), method: :delete, data: {confirm: 'Really Remove this post?'}
+          div class="post-footer"
+          div class="post-read-more button" Read More

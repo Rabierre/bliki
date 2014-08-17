@@ -19,8 +19,9 @@ body {
     height: 100%;
     display: block;
     font-family: sans-serif;
-    background-image: url("glados.jpg");
+    background-color: #E0E0E0;
     background-size: cover;
+    font-family: 'Lato', sans-serif;
 }
 
 #entry {
@@ -88,7 +89,6 @@ body {
 #page {
     position:relative;
     margin:0 auto;
-    padding-left: 20px;
     min-height:900px;
     width: 100%;
 }
@@ -96,10 +96,10 @@ body {
 #content {
     float: left;
     display: block;
-    width: 65%;
+    width: 80%;
     min-height: 700px;
     margin: 0 auto;
-    margin-left: 16%;
+    margin-left: 10%;
     border-radius: 3px 3px 0px 0px;
 
 }
